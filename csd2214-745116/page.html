@@ -1,21 +1,24 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>t1</title>
+    <script type="text/javascript">
+        function addNumbers(j) {
+            var sum = 0;
+            var j = 4;
+            while (1 < j)
+            {
+                sum += j--;
+            }
+            return sum;
+        }
+    </script>
 </head>
 <body>
     <script>
-        var input1 = prompt("How high should i count up to?")
-        var sum = 0;
-        var j = 0;
-        while (j <= input1) {
-            document.write(" <p>Point A: i is" + j);
-            document.write("<p>Point A: sum is" + sum);
-            sum += j++;
-            document.write("<p>Point B: sum is" + sum);
-        }
-        document.write("<hr><p>Point C: j is" + j);
-        document.write(sum);
+        var inputnumber = prompt("How high should i count up to?")
+
+        document.write(addNumbers(inputnumber));
     </script>
     
 </body>
